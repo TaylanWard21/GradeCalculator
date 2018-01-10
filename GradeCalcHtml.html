@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Taylan's Grade Calculator</title>
+    <script src="GradeCalcJav.js"></script>
+    <link rel="stylesheet" href="GradeCalcCss.css"/>
+</head>
+<body>
+<h2>Figure Out Your Grade!</h2>
+
+<table>
+    <tr>
+        <th class="q">Quizzes</th>
+        <th class="h">Homework</th>
+        <th class="t">Tests</th>
+        <th class="m">Midterm</th>
+    </tr>
+    <tr>
+        <td class="q">Percentage = <input type="text" id="quiz" value="90" size="25"> </td>
+        <td class="h">Percentage = <input type="text" id="homeworks" value="90" size="25"> </td>
+        <td class="t">Percentage = <input type="text" id="test" value="90" size="25"> </td>
+        <td class="m">Percentage = <input type="text" id="midterms" value="90" size="25"> </td>
+    </tr>
+    <tr>
+        <td class="q">Weight = <input type="text" id="quizzesWeight" value="20" size="25"></td>
+        <td class="h">Weight = <input type="text" id="homeworkWeight" value="20" size="25"></td>
+        <td class="t">Weight = <input type="text" id="testsWeight" value="20" size="25"></td>
+        <td class="m">Weight = <input type="text" id="midtermWeight" value="20" size="25"></td>
+    </tr>
+
+</table>
+
+<button onclick=" calculateCurrentGrade()">Find My Grade!</button>
+
+
+<div id="homework"></div>
+<div id="tests"></div>
+<div id="quizzes"></div>
+<div id="midterm"></div>
+<div id="average"></div>
+<div id="currentGrade"></div>
+<button onclick=" calculateGradeNeeded()">What Do I Need!</button>
+<div id="neededGrade">What Grade Do You Want? <input type="text" id="weight" value="95" size="2"> </div>
+<div id="finalGrade">What Is Your Final Worth? <input type="text" id="final" value="20" size="2"> </div>
+
+<div id="thatGrade"></div>
+
+</body>
+</html>
